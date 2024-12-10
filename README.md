@@ -2,66 +2,67 @@
 **Objective:**
 Develop an application that can identify and select mosaic tiles of a specified color in real-time, using the Arduino Nicla Vision.
 
-**Key Components:**
+**Key Components**
 1. Arduino Nicla Vision:
-A compact board with an integrated camera and AI processing capabilities, perfect for vision-based tasks.
+- A compact board with an integrated camera and AI processing capabilities, perfect for vision-based tasks.
 
 2. Actuation Mechanism:
-A robotic arm, conveyor belt, or sorting mechanism to physically separate the selected tiles.
+- A robotic arm, conveyor belt, or sorting mechanism to physically separate the selected tiles.
 
 3. Color Analysis Algorithm:
-Software that processes the captured images to identify tiles matching the target color.
+- Software that processes the captured images to identify tiles matching the target color.
 
 4. Power Supply:
-To power the Nicla Vision and any associated actuators.
+- To power the Nicla Vision and any associated actuators.
 
-**Optional External Components:**
-1. Light source for consistent illumination.
-2. Display or interface for setting the target color dynamically.
+**Optional External Components**
+* Light source for consistent illumination.
+* Display or interface for setting the target color dynamically.
 
-**Workflow:**
-1. Image Capture: The Nicla Vision’s camera captures frames of the mosaic tiles presented in front of it.
+**Workflow**
+1. Image Capture:
+- The Nicla Vision’s camera captures frames of the mosaic tiles presented in front of it.
 
 2. Preprocessing:
-Convert the captured image to an appropriate color space (e.g., HSV, RGB).
-Apply filters to enhance contrast and remove noise.
+- Convert the captured image to an appropriate color space (e.g., HSV, RGB).
+- Apply filters to enhance contrast and remove noise.
 
 3. Color Detection:
-Use thresholding or AI-based models (e.g., color segmentation) to identify tiles matching the specified color.
-Compute bounding boxes for tiles that match the target color.
+- Use thresholding or AI-based models (e.g., color segmentation) to identify tiles matching the specified color.
+- Compute bounding boxes for tiles that match the target color.
 
 4. Selection:
-Send control signals to the sorting mechanism to separate tiles of the identified color.
-If no match is found, tiles continue along the default path.
+- Send control signals to the sorting mechanism to separate tiles of the identified color.
+- If no match is found, tiles continue along the default path.
 
 5. Dynamic Adjustment (Optional):
-Allow users to select or change the target color through an interface or physical buttons.
+- Allow users to select or change the target color through an interface or physical buttons.
 
-**Implementation Steps:**
+**Implementation Steps**
 1. Hardware Setup:
-Mount the Nicla Vision on a frame to view the mosaic tile stream (e.g., a conveyor belt).
-Connect actuators to the Nicla Vision through GPIO pins or additional control boards.
+- Mount the Nicla Vision on a frame to view the mosaic tile stream (e.g., a conveyor belt).
+- Connect actuators to the Nicla Vision through GPIO pins or additional control boards.
 
 2. Software Development:
-Use the Arduino IDE or a compatible development environment to program the Nicla Vision.
-Leverage libraries such as OpenMV or TensorFlow Lite for image processing and AI.
+- Use the Arduino IDE or a compatible development environment to program the Nicla Vision.
+- Leverage libraries such as OpenMV or TensorFlow Lite for image processing and AI.
 
 3. Calibration:
-Test and calibrate the system under various lighting conditions.
-Tune the color detection thresholds or retrain the model as needed.
+- Test and calibrate the system under various lighting conditions.
+- Tune the color detection thresholds or retrain the model as needed.
 
 4. Integration:
-Combine the Nicla Vision with the actuation system and test the end-to-end workflow.
+- Combine the Nicla Vision with the actuation system and test the end-to-end workflow.
 
 **Challenges and Solutions:**
 1. Lighting Conditions:
-Ensure consistent lighting to avoid color detection errors. Use controlled light sources.
+- Ensure consistent lighting to avoid color detection errors. Use controlled light sources.
 
 2. Processing Speed:
-Optimize code for real-time performance by focusing on lightweight models or efficient algorithms.
+- Optimize code for real-time performance by focusing on lightweight models or efficient algorithms.
 
 3. Physical Constraints:
-Ensure the tiles are well-separated and visible to avoid misclassification.
+- Ensure the tiles are well-separated and visible to avoid misclassification.
 
 **Applications:**
 
