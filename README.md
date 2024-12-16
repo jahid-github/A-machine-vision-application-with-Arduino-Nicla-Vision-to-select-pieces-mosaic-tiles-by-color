@@ -50,6 +50,7 @@ Develop an application that can identify and select mosaic tiles of a specified 
 3. Calibration:
 - Test and calibrate the system under various lighting conditions.
 - Tune the color detection thresholds.
+
 4. Integration:
 - Test the end-to-end workflow.
 
