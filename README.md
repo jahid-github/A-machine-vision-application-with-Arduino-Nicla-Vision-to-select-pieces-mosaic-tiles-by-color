@@ -10,13 +10,10 @@ Develop an application that can identify and select mosaic tiles of a specified 
 1. Arduino Nicla Vision:
 - A compact board with an integrated camera and AI processing capabilities, perfect for vision-based tasks.
 
-2. Actuation Mechanism:
-- A robotic arm, conveyor belt, or sorting mechanism to physically separate the selected tiles.
-
-3. Color Analysis Algorithm:
+2. Color Analysis Algorithm:
 - Software that processes the captured images to identify tiles matching the target color.
 
-4. Power Supply:
+3. Power Supply:
 - To power the Nicla Vision and any associated actuators.
 
 **Optional External Components**
@@ -32,7 +29,7 @@ Develop an application that can identify and select mosaic tiles of a specified 
 - Apply filters to enhance contrast and remove noise.
 
 3. Color Detection:
-- Use thresholding or AI-based models (e.g., color segmentation) to identify tiles matching the specified color.
+- Use thresholding to identify tiles matching the specified color.
 - Compute bounding boxes for tiles that match the target color.
 
 4. Selection:
@@ -44,26 +41,24 @@ Develop an application that can identify and select mosaic tiles of a specified 
 
 **Implementation Steps**
 1. Hardware Setup:
-- Mount the Nicla Vision on a frame to view the mosaic tile stream (e.g., a conveyor belt).
-- Connect actuators to the Nicla Vision through GPIO pins or additional control boards.
+- Mount the Nicla Vision on a frame to view the mosaic tile stream.
 
 2. Software Development:
-- Use the Arduino IDE or a compatible development environment to program the Nicla Vision.
-- Leverage libraries such as OpenMV or TensorFlow Lite for image processing and AI.
+- Use the Arduino IDE.
+- Leverage libraries such as OpenMV.
 
 3. Calibration:
 - Test and calibrate the system under various lighting conditions.
-- Tune the color detection thresholds or retrain the model as needed.
-
+- Tune the color detection thresholds.
 4. Integration:
-- Combine the Nicla Vision with the actuation system and test the end-to-end workflow.
+- Test the end-to-end workflow.
 
 **Challenges and Solutions:**
 1. Lighting Conditions:
 - Ensure consistent lighting to avoid color detection errors. Use controlled light sources.
 
 2. Processing Speed:
-- Optimize code for real-time performance by focusing on lightweight models or efficient algorithms.
+- Optimize code for real-time performance by focusing on lightweight models.
 
 3. Physical Constraints:
 - Ensure the tiles are well-separated and visible to avoid misclassification.
