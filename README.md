@@ -36,9 +36,6 @@ Develop an application that can identify and select mosaic tiles of a specified 
 - Send control signals to the sorting mechanism to separate tiles of the identified color.
 - If no match is found, tiles continue along the default path.
 
-5. Dynamic Adjustment (Optional):
-- Allow users to select or change the target color through an interface or physical buttons.
-
 **Implementation Steps**
 1. Hardware Setup:
 - Mount the Nicla Vision on a frame to view the mosaic tile stream.
