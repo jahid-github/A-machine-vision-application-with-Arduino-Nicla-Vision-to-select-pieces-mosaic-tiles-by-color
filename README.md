@@ -1,6 +1,6 @@
 # A-machine-vision-application-with-Arduino-Nicla-Vision-to-select-pieces-mosaic-tiles-by-color
 <p align="center">
-  <img src="nicla-vision-power.jpg" alt="Nicla Vision Power" width="300"/>
+  <img src="project.jpg" alt="Project Sample" width="300"/>
 </p>
 
 **Objective:**
