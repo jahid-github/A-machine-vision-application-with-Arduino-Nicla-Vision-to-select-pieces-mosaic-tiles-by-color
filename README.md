@@ -25,7 +25,7 @@ Develop an application that can identify and select mosaic tiles of a specified 
 - The Nicla Vision’s camera captures frames of the mosaic tiles presented in front of it.
 
 2. Preprocessing:
-- Convert the captured image to an appropriate color space (e.g., HSV, RGB).
+- Convert the captured image to an appropriate color space-HSV, RGB.
 - Apply filters to enhance contrast and remove noise.
 
 3. Color Detection:
